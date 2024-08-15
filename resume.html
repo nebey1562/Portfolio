@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Eben G Abraham</title>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('nav').innerHTML = data;
+            });
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: white; /* White text for readability */
+        }
+        header {
+            background-color: #1f1f1f; /* Slightly lighter dark for header */
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section {
+            background-color: #1f1f1f; /* Darker section background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1, h2, h3 {
+            margin-bottom: 15px;
+            color: #e0e0e0; /* Light gray for headings */
+        }
+        .box {
+            background-color: #2c2c2c; /* Darker box background */
+            border: 1px solid #3a3a3a; /* Border color */
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .box:hover {
+            background-color: #3a3a3a; /* Slightly lighter background on hover */
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+        .container {
+            max-width: 800px;
+        }
+        .list-unstyled li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <header class="text-center">
+        <h1>Resume</h1>
+    </header>
+    <section class="container">
+        <h3>Contact Information</h3>
+        <ul class="list-unstyled">
+            <li><strong>Email:</strong> <a href="mailto:ebengabraham2003@gmail.com">ebengabraham2003@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+91497001697">9497001697</a></li>
+            <li><strong>Location:</strong> Kochi, Kerala, India</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/nebey1562" target="_blank">github.com/nebey1562</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/eben-abraham-62b391227" target="_blank">linkedin.com/in/eben-abraham-62b391227</a></li>
+            <li><strong>Kaggle:</strong> <a href="https://www.kaggle.com/ebengabraham" target="_blank">kaggle.com/ebengabraham</a></li>
+            <li><strong>LeetCode:</strong> <a href="https://leetcode.com/u/nebey1562/" target="_blank">leetcode.com/u/nebey1562</a></li>
+        </ul>
+
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>
+                <strong>Software Development Intern</strong> - MyGate<br>
+                <em>Kochi, India</em> | 2024/08 – 2024/12
+            </li>
+            <li>
+                <strong>Data Science Intern</strong> - Panapps<br>
+                <em>Kochi, India</em> | 2024/06 – 2024/07
+                <ul>
+                    <li>EDA and data visualization using Power BI</li>
+                    <li>Predictive and classification model deployment</li>
+                    <li>Fine-tuning and PCA</li>
+                    <li>Text processing using NLTK and SpaCy</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul>
+            <li>
+                <strong>Bachelor of Technology (B. Tech.) in AI and Data Science</strong><br>
+                Muthoot Institute of Technology and Science, Kochi, Kerala<br>
+                <em>CGPA: 8.27</em> | 2021/09 – 2025/07
+            </li>
+            <li>
+                <strong>Higher Secondary</strong><br>
+                Gregorian Public School, Kochi, India<br>
+                <em>Percentage: 93%</em>
+            </li>
+        </ul>
+
+        <h3>Projects</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <h4><a href="https://github.com/nebey1562/llm-coconut-farming-assistance-bot" target="_blank">LLM Coconut Farming Assistance Bot</a></h4>
+                    <p>Custom dataset, fine-tuned, quantized, RAG-based LLM for agriculture assistance with RESTful API deployment.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h4><a href="https://github.com/nebey1562/resume-parser" target="_blank">Resume Parser Using NLP</a></h4>
+                    <p>Loading data, preprocessing steps, training model with TensorFlow, and parsing resumes.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h4><a href="https://github.com/nebey1562/student-performance-analysis" target="_blank">Student Performance Analysis & Prediction</a></h4>
+                    <p>EDA, multiple ML models, and website deployment using Flask for marks prediction.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h4><a href="https://github.com/nebey1562/stock-market-risk-prediction" target="_blank">Stock Market Risk Prediction</a></h4>
+                    <p>LSTM model creation, strategy deployment, and P&L visualization.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h4><a href="https://github.com/nebey1562/face-detection-ai" target="_blank">Face Detection AI Model</a></h4>
+                    <p>Custom dataset creation, data augmentation, and real-time deployment with TensorFlow.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h4><a href="https://github.com/nebey1562/calorie-tracker" target="_blank">Calorie Tracker App</a></h4>
+                    <p>A flutter app that can be used to track calories based on personal details and logs calorie intake based on food eaten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
